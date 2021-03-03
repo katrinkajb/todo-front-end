@@ -22,7 +22,7 @@ export async function addTodo(todo, completed, token) {
 
 export async function completeTodo(todoId, completed, token) {
     const response = await request
-    .put(`${URL}/api/todos/${todoId}`)
+    .put(`${URL}/api/todos/${todoId}`) 
     .set('Authorization', token)
     .send({ completed })
 
