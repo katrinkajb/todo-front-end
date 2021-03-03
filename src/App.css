@@ -34,6 +34,7 @@ label {
 }
 
 .list {
+  display: block;
   justify-content: center;
 }
 
@@ -44,10 +45,11 @@ label {
   padding: 10px;
   cursor: pointer;
   transition: all .2s ease-in-out;
+  background-color: rgb(238, 199, 125);
 }
 
 .todo:hover {
-  background-color: pink;
+  border: solid 3px black;
 }
 
 .completed {
