@@ -6,6 +6,7 @@ body {
 
 .App {
   text-align: center;
+  justify-content: center;
 }
 
 .App-header {
@@ -30,4 +31,26 @@ body {
 label {
   display: block;
   font-style: bold;
+}
+
+.list {
+  justify-content: center;
+}
+
+.todo {
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 40%;
+  padding: 10px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.todo:hover {
+  background-color: pink;
+}
+
+.completed {
+  text-decoration: line-through;
+  background-color: rgb(110, 160, 110);
 }

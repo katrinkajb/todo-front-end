@@ -1,15 +1,17 @@
-export const TOKEN = 'TOKEN';
+export const USER = 'user';
 
-export function getTokenFromLocalStorage() {
-    const token = localStorage.getItem(TOKEN);
+export function getUserFromLocalStorage() {
+    const user = localStorage.getItem(USER);
 
-    if (token) return JSON.parse(token);
+    if (user) return JSON.parse(user);
 
     return {
+        email: '',
+        id: '',
         token: ''
     }
 }
 
-export function setTokenInLocalStorage(token) {
-    localStorage.setItem(TOKEN, JSON.stringify(token));
+export function setUserInLocalStorage(user) {
+    localStorage.setItem(USER, JSON.stringify(user));
 }

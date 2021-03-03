@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css'; 
+import { signUpUser } from '../api-utils.js';
 
 export default class SignUpPage extends Component {
     state = {
@@ -18,9 +19,9 @@ export default class SignUpPage extends Component {
     handleSubmit = async e => {
         e.preventDefault();
 
-        // const user = await signUpUser(this.state.email, this.state.password);
+        const user = await signUpUser(this.state.email, this.state.password);
 
-        // this.props.handleUserChange(user);
+        this.props.handleUserChange(user);
 
         this.props.history.push('/todos');
     }
