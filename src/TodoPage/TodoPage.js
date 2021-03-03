@@ -34,9 +34,12 @@ export default class TodoPage extends Component {
     }
 
     handleComplete = async(todoId) => {
-        this.setState({ completed: true });
+        this.setState( this.state.completed === false
+            ? { completed: true}
+            : { completed: false}
+        );
         
-        await completeTodo(todoId, this.state.todo.completed, this.props.user.token);
+        await completeTodo(todoId, this.state.completed, this.props.user.token);
 
         this.fetchTodos();
     }
