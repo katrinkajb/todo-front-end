@@ -8,16 +8,16 @@ export default withRouter(class Header extends Component {
             <header className='App-header'>
                 <div className='welcome'>Todo List App</div>
                 <div>
-                    <NavLink exact ClassName="header-links" to="/signup">
+                    <NavLink exact className="header-links" to="/signup">
                         Signup
                     </NavLink>
-                    <NavLink exact ClassName="header-links" to="/login">
+                    <NavLink exact className="header-links" to="/login">
                         Login
                     </NavLink>
-                    <NavLink exact ClassName="header-links" to="/">
+                    <NavLink exact className="header-links" to="/">
                         Home
                     </NavLink>
-                    <NavLink exact ClassName="header-links" to="/todos">
+                    <NavLink exact className="header-links" to="/todos">
                         To Do List
                     </NavLink>
                 </div>
